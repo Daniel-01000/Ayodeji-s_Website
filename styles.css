@@ -1097,8 +1097,28 @@ body.light-mode {
 
 body.light-mode .navbar {
     background: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(10px);
     border-bottom: 1px solid var(--border-color);
-    box-shadow: var(--shadow-sm);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+body.light-mode .nav-logo {
+    background: var(--gradient-1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+body.light-mode .nav-link {
+    color: var(--text-secondary);
+}
+
+body.light-mode .nav-link:hover {
+    color: var(--primary-color);
+}
+
+body.light-mode .bar {
+    background-color: var(--text-primary);
 }
 
 body.light-mode .card-bg,
